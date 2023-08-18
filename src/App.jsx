@@ -1,9 +1,11 @@
-import FAQLayout from "./FAQLayout.jsx"
+import FaqLayout from "./FaqLayout.jsx"
 
 function App() {
   return (
     <>
-      <FAQLayout />
+      <div className={"flex min-h-screen items-center justify-center bg-gradient-to-b from-soft-violet to-soft-blue"}>
+        <FaqLayout />
+      </div>
     </>
   )
 }

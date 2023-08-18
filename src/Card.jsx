@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import arrow from "./assets/images/icon-arrow-down.svg"
 
-const CollapsableCard = ({ title, content }) => {
+const Card = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   function handleOpenClick() {
@@ -19,4 +19,4 @@ const CollapsableCard = ({ title, content }) => {
   )
 }
 
-export default CollapsableCard
+export default Card

@@ -1,15 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      "sm": "375px",
-      "lg": "1440px"
+      sm: "375px",
+      md: "920px",
+      lg: "1440px"
     },
     extend: {
+      backgroundImage: {
+        bgDesktopShadow: "url('./src/assets/images/bg-pattern-desktop.svg')",
+        bgMobileShadow: "url('./src/assets/images/bg-pattern-mobile.svg')"
+      },
       colors: {
         "very-dark-desaturated-blue": "hsl(238, 29%, 16%)",
         "soft-red": "hsl(14, 88%, 65%)",
@@ -20,9 +22,9 @@ export default {
         "light-grayish-blue": "hsl(240, 5%, 91%)"
       },
       fontFamily: {
-        KumbhSans: ['Kumbh Sans', 'sans-serif']
+        KumbhSans: ["Kumbh Sans", "sans-serif"]
       }
-    },
+    }
   },
-  plugins: [],
+  plugins: []
 }
